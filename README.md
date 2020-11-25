@@ -7,12 +7,40 @@ Authors: Asimenia Gavriilidou<sup>1</sup>, Thomas Andrew Mackenzie<sup>2</sup>, 
 <sup>3</sup>Hoekmine BV, Utrecht, The Netherlands<br />
 
 Correspondence: asimenia.gavriilidou@wur.nl     
-For code related queries: asimenia.gavriilidou@wur.nl 
+
 
 This repository contains codes for analysis performed in the research article by Gavriilidou A., et al (2021). "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria." *Marine Drugs*. [submitted]()
 
+Project folder structure:
 
+ ```
+ Gavriilidou_et_al_Bioactivity_Screening/
+ |------- Subfolder_1/    # short description of what it contains.    
+      |------- Subfolder 1.1/ # short description.
+           |------ code.R or code.rmd # short description.  
+           |------ 
+      |------- Subfolder 1.2/ # short description.  
+           |------ code.R or code.rmd  
+      |------- Subfolder 1.3/ # short description.  
+           |------ code.R or code.rmd
+      |------- some files if any. e.g. "dehalo_genes.tab" # short description. 
+                        
+|------- Subfolder_2/ # contains list of human gut metagenomes.  
+      |------- Subfolder 2.1/ # short description.
+           |------ code.R or code.rmd # short description.  
+           |------ 
+      |------- Subfolder 2.2/ # short description.  
+           |------ code.R or code.rmd  
+      |------- Subfolder 2.3/ # short description.  
+           |------ code.R or code.rmd
+      |------- some files if any. e.g. "dehalo_genes.tab" # short description. 
+          
+|------- Subfolder_3/ 
+|------- Any othor files # e.g. The Rproject file/supplementary table etc.  
+  
+```
 
+For any queries and additional information regarding the analysis described here, contact asimenia.gavriilidou@wur.nl  
 
 
 
