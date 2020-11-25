@@ -6,8 +6,8 @@ Authors: Asimenia Gavriilidou<sup>1</sup>, Thomas Andrew Mackenzie<sup>2</sup>, 
 <sup>2</sup>Fundación MEDINA, Centro de Excelencia en Investigación de Medicamentos Innovadores en Andalucía, Avda. del Conocimiento 34, 18016 Granada, Spain<br />
 <sup>3</sup>Hoekmine BV, Utrecht, The Netherlands<br />
 
-Correspondence: asimenia.gavriilidou[@]wur.nl     
-For code related queries: asimenia.gavriilidou[@]wur.nl 
+Correspondence: asimenia.gavriilidou@wur.nl     
+For code related queries: asimenia.gavriilidou@wur.nl 
 
 This repository contains codes for analysis performed in the research article by Gavriilidou A., et al (2021). "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria." *Marine Drugs*. [submitted]()
 
