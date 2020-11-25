@@ -15,28 +15,31 @@ Project folder structure:
 
  ```
  Gavriilidou_et_al_Bioactivity_Screening/
- |------- Subfolder_1/    # short description of what it contains.    
-      |------- Subfolder 1.1/ # short description.
-           |------ code.R or code.rmd # short description.  
-           |------ 
-      |------- Subfolder 1.2/ # short description.  
-           |------ code.R or code.rmd  
-      |------- Subfolder 1.3/ # short description.  
-           |------ code.R or code.rmd
-      |------- some files if any. e.g. "dehalo_genes.tab" # short description. 
-                        
-|------- Subfolder_2/ # contains list of human gut metagenomes.  
-      |------- Subfolder 2.1/ # short description.
-           |------ code.R or code.rmd # short description.  
-           |------ 
-      |------- Subfolder 2.2/ # short description.  
-           |------ code.R or code.rmd  
-      |------- Subfolder 2.3/ # short description.  
-           |------ code.R or code.rmd
-      |------- some files if any. e.g. "dehalo_genes.tab" # short description. 
+ |------- Data _analysis_in_Linux/    # short description of what it contains.    
+      |------- Genome_Assembly/ # short description.
+           |------ readme.txt # all genomes used are publicly available there...raw reads are there 
+           |------ code.rmd
+      |------- Phylogenetic_Analysis/ # short description.  
+           |------ code.R or code.rmd  # tree in itol
+      |------- Genome_mining/ # short description.  
+           |------ readme.txt # antiSMASH online
+      |------- 
+      
+|------- Data_analysis_in_R_Studio/ # contains ............ 
+      |------- input_data/ # short description.
+           |------  .csv# short description.  
+           |------  .csv
+      |-------- output_data/ # short description.  
+           |------ Figure_2.tif
+           |------ Figure_3.tif
+      |------- code.rmd # short description.  
+            
           
-|------- Subfolder_3/ 
-|------- Any othor files # e.g. The Rproject file/supplementary table etc.  
+|------- Bioactivity Screening Assays #contains .......
+      |------- Raw_data/ # short description.
+           |------ antimicrobial_activity_test_results.xlsx #describe
+           |------ cell_viability_test_results.xlsx #describe
+  
   
 ```
 
