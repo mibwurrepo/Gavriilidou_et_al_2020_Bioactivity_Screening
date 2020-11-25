@@ -15,17 +15,19 @@ Project folder structure:
 
  ```
  Gavriilidou_et_al_Bioactivity_Screening/
- |------- Data _analysis_in_Linux/    # short description of what it contains.    
-      |------- Genome_Assembly/ # short description.
+|------- Genome_Assembly/ # short description.
            |------ readme.txt # all genomes used are publicly available there...raw reads are there 
            |------ code.rmd
-      |------- Phylogenetic_Analysis/ # short description.  
-           |------ code.R or code.rmd  # tree in itol
-      |------- Genome_mining/ # short description.  
+|------- Phylogenetic_Analysis/ # short description.  
+           |------ .msa  # tree in itol
+           |------ .tree  # tree in itol
+           |------ .svg  # tree in itol
+           |------ .txt  # reference genomes(accession numbers)
+|------- Genome_mining/ # short description.  
            |------ readme.txt # antiSMASH online
       |------- 
       
-|------- Data_analysis_in_R_Studio/ # contains ............ 
+|------- Data_visualization/ # contains ............ 
       |------- input_data/ # short description.
            |------  .csv# short description.  
            |------  .csv
@@ -35,7 +37,7 @@ Project folder structure:
       |------- code.rmd # short description.  
             
           
-|------- Bioactivity Screening Assays #contains .......
+|------- Bioactivity_Screening_Assays #contains .......
       |------- Raw_data/ # short description.
            |------ antimicrobial_activity_test_results.xlsx #describe
            |------ cell_viability_test_results.xlsx #describe
