@@ -15,7 +15,7 @@ Project folder structure:
 
  ```
  Gavriilidou_et_al_Bioactivity_Screening/
-|------- Genome_Assembly/ # short description.
+|------- Quality_Control_&_Genome_Assembly/ # short description.
            |------ readme.txt # all genomes used are publicly available there...raw reads are there 
            |------ code.rmd
 |------- Phylogenetic_Analysis/ # short description.  
