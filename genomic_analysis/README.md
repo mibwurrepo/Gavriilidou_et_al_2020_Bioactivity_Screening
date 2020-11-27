@@ -10,7 +10,7 @@ Correspondence: asimenia.gavriilidou@wur.nl
 This repository contains codes for analysis performed in the research article by Gavriilidou A., et al (2021). "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria." Marine Drugs. submitted
 Project folder structure:
 
-``
+```
 Gavriilidou_et_al_Bioactivity_Screening/
 |------- Quality_Control_&_Genome_Assembly/ # short description.
           |------ readme.txt # all genomes used are publicly available there...raw reads are there 
@@ -39,7 +39,7 @@ Gavriilidou_et_al_Bioactivity_Screening/
           |------ antimicrobial_activity_test_results.xlsx #describe
           |------ cell_viability_test_results.xlsx #describe
  
- ``
+ ```
 
 Instructions:
 
