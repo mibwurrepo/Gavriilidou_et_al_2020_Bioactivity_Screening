@@ -15,34 +15,24 @@ Project folder structure:
 
  ```
  Gavriilidou_et_al_Bioactivity_Screening/
-|------- Quality_Control_&_Genome_Assembly/ # short description.
-           |------ readme.txt # all genomes used are publicly available there...raw reads are there 
-           |------ code.rmd
-|------- Phylogenetic_Analysis/ # short description.  
-           |------ .msa  # tree in itol
-           |------ .tree  # tree in itol
-           |------ .svg  # tree in itol
-           |------ .txt  # reference genomes(accession numbers)
-|------- Genome_mining/ # short description.  
-           |------ readme.txt # antiSMASH online
-      |------- 
-      
-|------- Data_visualization/ # contains ............ 
-      |------- input_data/ # short description.
-           |------  .csv# short description.  
-           |------  .csv
-      |-------- output_data/ # short description.  
-           |------ Figure_2.tif
-           |------ Figure_3.tif
-      |------- code.rmd # short description.  
-            
+|------- Bioactivity_Screening_assays # contains results from the anticancer activity screening test
+           |------ MTT_assay_results.xlsx # cell viability measurements
+           |------ README.md # 
+|------- data_visualization # contains files used in data analysis with R
+           |------ BGCs_heatmap_df.csv # BGC abundance table used in Figure 4
+           |------ Cytotoxicity_and_BGCs.Rmd # Codes for generating Figure 3 and 4
+           |------ README.md # 
+           |------ Screening_MS.Rproj # The Rproject file
+           |------ toxicity_barplot_df.csv # Toxicity data used in Figure 3
+|------- genomic_analysis # short description.  
+           |------ BGC_Abundance.xlsx  # Summary of the BGC abundance (absolute & relative) in the analyzed genomes
+           |------ Genomic_Analysis.html # Codes for genome assembly and phylogenetic analysis
+           |------ ML_tree_09092020.tree  # Final tree file used in iTOL
+           |------ README.md # 
+           |------ gtdbtk.bac120.user_msa.fasta # Multiple sequence alignment file used for generating the tree
+           |------ reference_genomes_list.txt # List of feference genomes included in the tree
+|------- README.md # short description.  
           
-|------- Bioactivity_Screening_Assays #contains .......
-      |------- Raw_data/ # short description.
-           |------ antimicrobial_activity_test_results.xlsx #describe
-           |------ cell_viability_test_results.xlsx #describe
-  
-  
 ```
 Instructions:
 
