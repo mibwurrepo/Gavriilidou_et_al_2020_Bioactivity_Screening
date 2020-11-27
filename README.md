@@ -17,21 +17,21 @@ Project folder structure:
  Gavriilidou_et_al_Bioactivity_Screening/
 |------- Bioactivity_Screening_assays # contains results from the anticancer activity screening test
            |------ MTT_assay_results.xlsx # cell viability measurements
-           |------ README.md # 
+           |------ README.md # information on contents of directory
 |------- data_visualization # contains files used in data analysis with R
            |------ BGCs_heatmap_df.csv # BGC abundance table used in Figure 4
            |------ Cytotoxicity_and_BGCs.Rmd # Codes for generating Figure 3 and 4
-           |------ README.md # 
+           |------ README.md # information on contents of directory
            |------ Screening_MS.Rproj # The Rproject file
            |------ toxicity_barplot_df.csv # Toxicity data used in Figure 3
 |------- genomic_analysis # short description.  
            |------ BGC_Abundance.xlsx  # Summary of BGC abundance in the genomes
            |------ Genomic_Analysis.html # Codes for genome assembly and phylogenetic analysis
            |------ ML_tree_09092020.tree  # Final tree file used in iTOL
-           |------ README.md # 
+           |------ README.md # information on contents of directory
            |------ gtdbtk.bac120.user_msa.fasta # Multiple sequence alignment file used for generating the tree
            |------ reference_genomes_list.txt # List of feference genomes included in the tree
-|------- README.md # short description.  
+|------- README.md # study information and project folder structure
           
 ```
 
