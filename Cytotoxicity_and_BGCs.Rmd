@@ -1,0 +1,102 @@
+---
+title: "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria"
+author: "Asimenia Gavrillidou"
+date: "November 27, 2020"
+output: 
+  html_document: 
+    highlight: espresso
+    theme: yeti
+---
+
+##Cytotoxicity analysis
+
+
+
+Load libraries
+
+```{r message=FALSE, warning=FALSE}
+
+library(ggplot2)
+library(hrbrthemes)
+
+```
+
+Load data from anticancer screening assays results
+
+```{r message=FALSE, warning=FALSE}
+
+data <- read.csv("toxicity_barplot_df.csv", header = T)
+
+data <- data.frame(id=data$Strain_id, cell_line=data$cell_line, toxicity=data$aver_toxicity, se=data$se)
+
+##Reorder factor levels --> strain ids in specific order
+
+data$id <- factor(data$id, levels = unique(data$id))
+```
+
+
+Plot %activity of tested extracts against human cancer cell lines
+
+```{r message=FALSE, warning=FALSE}
+##Add secondary axis guides
+
+guide_axis_label_trans <- function(label_trans = identity, ...) {
+  axis_guide <- guide_axis(...)
+  axis_guide$label_trans <- rlang::as_function(label_trans)
+  class(axis_guide) <- c("guide_axis_trans", class(axis_guide))
+  axis_guide
+}
+
+guide_train.guide_axis_trans <- function(x, ...) {
+  trained <- NextMethod()
+  trained$key$.label <- x$label_trans(trained$key$.label)
+  trained
+}
+
+##Add taxonomy info
+
+genera <- c("Bacillus", "Janibacter", "Brevibacterium", "Rhodococcus", "Aquimarina", "Psychrobacter", "Psychrobacter", "Acinetobacter", "Microbulbifer", "Ruegeria", "Ruegeria", "Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Pseudovibrio","Bradyrhizobium")
+
+##Plot
+
+p <- ggplot(data=data, aes(x=toxicity, y=id, group=cell_line)) + geom_bar(stat = "identity") + geom_errorbar(aes(xmin=toxicity-se, xmax=toxicity+se), width=.2, position = position_dodge(.9))+xlab("%activity") + ylab("Strain ID") + facet_grid(. ~ cell_line) + theme(strip.text = element_text(size=12),axis.title.x = element_text(size = 14, face = "bold"), axis.title.y = element_text(size = 14, face = "bold"), axis.text = element_text(size=12), axis.text.y.right = element_text(face="italic")) +  guides(y.sec=guide_axis_label_trans(~paste(genera)))
+
+##Save plot
+
+ggsave (filename="Figure_2.svg",plot=p, device= "svg", dpi = 600, width = 25, height = 20, units="cm")
+
+```
+
+
+##Biosynthetic Gene Cluster profiling 
+
+
+
+Load data from antiSMASH results
+
+```{r message=FALSE, warning=FALSE}
+BGCs <- read.csv("BGCs_heatmap_df.csv", header = TRUE)
+
+data2 <- data.frame(BGCs, ids=BGCs$Strain_ID, number=BGCs$Number_BGC, type=BGCs$Type_BGC)
+
+##Reorder levels of factor--> strain ids in specific order
+
+data2$ids <- factor(data2$ids, levels = unique(data2$ids))
+
+```
+
+Plot abundance of different BGC types in the genomes of the tested strains
+
+```{r message=FALSE, warning=FALSE}
+##Plot
+
+p2 <- ggplot(data2, aes(type, ids)) + geom_tile(aes(fill=number), colour="white", size=0.5) + geom_text(aes(label=number, fontface="bold", size=0.25), colour="white") + scale_fill_gradient(low = "darkcyan", high = "darkcyan") + labs(y="Strain ID", x="BGC type") +theme(legend.position = "none", axis.text.x = element_text(angle=90,size=rel(1.6), hjust=1), axis.text.y = element_text(size=rel(1.6)), axis.title.y = element_text(size = rel(1.65)),axis.title.x = element_text(size = rel(1.65)), axis.text.y.right = element_text(face="italic")) +  guides(y.sec=guide_axis_label_trans(~paste(genera)))
+
+##Save plot
+
+ggsave (filename="Figure_3.svg", plot=p2, device= "svg", dpi = 600, width = 35, height = 30, units="cm")
+
+```
+
+
+
