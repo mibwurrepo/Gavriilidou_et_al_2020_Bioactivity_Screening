@@ -25,7 +25,7 @@ Project folder structure:
            |------ Screening_MS.Rproj # The Rproject file
            |------ toxicity_barplot_df.csv # Toxicity data used in Figure 3
 |------- genomic_analysis # short description.  
-           |------ BGC_Abundance.xlsx  # Summary of the BGC abundance (absolute & relative) in the analyzed genomes
+           |------ BGC_Abundance.xlsx  # Summary of BGC abundance in the genomes
            |------ Genomic_Analysis.html # Codes for genome assembly and phylogenetic analysis
            |------ ML_tree_09092020.tree  # Final tree file used in iTOL
            |------ README.md # 
@@ -34,13 +34,6 @@ Project folder structure:
 |------- README.md # short description.  
           
 ```
-Instructions:
-
-1. Download the repo and unzip.  
-2. Open `Screening_MS.Rproj` in RStudio.  
-3. Open `Cytotoxicity_and_BGCs.Rmd` and click knit to reproduce the analysis.   
-
-The figures in the article were further edited to their final format in Inkscape v0.92.3.
 
 For any queries and additional information regarding the analysis described here, contact asimenia.gavriilidou@wur.nl  
 
