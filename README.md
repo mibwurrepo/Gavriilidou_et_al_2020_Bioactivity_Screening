@@ -44,6 +44,13 @@ Project folder structure:
   
   
 ```
+Instructions:
+
+1. Download the repo and unzip.  
+2. Open `Screening_MS.Rproj` in RStudio.  
+3. Open `Cytotoxicity_and_BGCs.Rmd` and click knit to reproduce the analysis.   
+
+The figures in the article were further edited to their final format in Inkscape v0.92.3.
 
 For any queries and additional information regarding the analysis described here, contact asimenia.gavriilidou@wur.nl  
 
