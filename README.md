@@ -30,7 +30,7 @@ Project folder structure:
            |------ ML_tree_09092020.tree  # Final tree file used in iTOL
            |------ README.md # information on contents of directory
            |------ gtdbtk.bac120.user_msa.fasta # Multiple sequence alignment file used for generating the tree
-           |------ reference_genomes_list.txt # List of feference genomes included in the tree
+           |------ reference_genomes_list.txt # List of reference genomes included in the tree
 |------- README.md # study information and project folder structure
           
 ```
