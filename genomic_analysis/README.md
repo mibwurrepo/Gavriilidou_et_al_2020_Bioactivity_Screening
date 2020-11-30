@@ -35,7 +35,7 @@ Project folder structure:
           
 ```
 
-Raw sequencing reads and draft genome assemblies used here are deposited under European Nucleotide Archive study accession number ____________ and PRJEB20602.
+Raw sequencing reads and draft genome assemblies used here are deposited under European Nucleotide Archive study accession number PRJEB41620 and PRJEB20602.
 
 All codes used for the analysis of the genomes included in this study are found in the file "Genomic_Analysis.html".
 
