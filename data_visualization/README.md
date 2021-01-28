@@ -9,7 +9,7 @@ Authors: Asimenia Gavriilidou<sup>1</sup>, Thomas Andrew Mackenzie<sup>2</sup>, 
 Correspondence: asimenia.gavriilidou@wur.nl     
 
 
-This repository contains codes for analysis performed in the research article by Gavriilidou A., et al (2021). "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria." *Marine Drugs*. [submitted]()
+This repository contains codes for analysis performed in the research article by Gavriilidou A., et al (2021). "Bioactivity Screening and Gene-Trait Matching Across Marine Sponge-Associated Bacteria." *Marine Drugs*. [accepted]()
 
 Instructions:
 
