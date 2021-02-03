@@ -10,6 +10,7 @@ Correspondence: asimenia.gavriilidou@wur.nl
 
 
 This repository contains codes for analysis performed in the research article by Gavriilidou A, Mackenzie TA, Sánchez P, Tormo JR, Ingham C, Smidt H, Sipkema D. Bioactivity Screening and Gene-Trait Matching across Marine Sponge-Associated Bacteria. Marine Drugs. 2021; 19(2):75. https://doi.org/10.3390/md19020075
+
 Instructions:
 
 1. Download the repo and unzip.  
